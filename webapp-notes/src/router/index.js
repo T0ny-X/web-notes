@@ -10,10 +10,25 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    }
+      path: '/css',
+      name: 'CSS',
+      component: () => import('../views/CSSView.vue')
+    },
+    {
+      path: '/js',
+      name: 'JS',
+      component: () => import('../views/JSView.vue')
+    },
+    {
+      path: '/html',
+      name: 'HTML',
+      component: () => import('../views/HTMLView.vue')
+    },
+    {
+      path: '/game',
+      name: 'Game',
+      component: () => import('../views/GameView.vue')
+    },
   ]
 })
 

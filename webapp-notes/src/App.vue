@@ -7,7 +7,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <nav class="nav">
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/about">About</RouterLink></li>
+        <li><RouterLink to="/css">CSS</RouterLink></li>
+        <li><RouterLink to="/html">HTML</RouterLink></li>
+        <li><RouterLink to="/js">JS</RouterLink></li>
+        <li><RouterLink to="/game">Game</RouterLink></li>
       </ul>
     </nav>
   </header>
