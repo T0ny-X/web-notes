@@ -1,0 +1,212 @@
+{
+  "keywords": [
+    {
+      "keyword": "abstract",
+      "explanation": "A class or method that cannot be instantiated directly, but can only be used as a blueprint for creating subclasses."
+    },
+    {
+      "keyword": "arguments",
+      "explanation": "An object that provides information about the arguments passed to a function."
+    },
+    {
+      "keyword": "await",
+      "explanation": "Pauses the execution of an asynchronous task and waits for it to complete."
+    },
+    {
+      "keyword": "boolean",
+      "explanation": "A data type that represents logical values of true or false."
+    },
+    {
+      "keyword": "break",
+      "explanation": "Exits a loop or switch statement prematurely."
+    },
+    {
+      "keyword": "byte",
+      "explanation": "A data type that represents 8-bit integers."
+    },
+    {
+      "keyword": "case",
+      "explanation": "Used in switch statements to specify a particular block of code to be executed based on the value of an expression."
+    },
+    {
+      "keyword": "catch",
+      "explanation": "Handles exceptions that occur within a try block."
+    },
+    {
+      "keyword": "char",
+      "explanation": "A data type that represents a single character."
+    },
+    {
+      "keyword": "class",
+      "explanation": "A blueprint for creating objects with specific properties and methods."
+    },
+    {
+      "keyword": "const",
+      "explanation": "A variable whose value cannot be changed after it is initialized."
+    },
+    {
+      "keyword": "continue",
+      "explanation": "Skips the rest of the current iteration of a loop and proceeds to the next iteration."
+    },
+    {
+      "keyword": "debugger",
+      "explanation": "Pauses the execution of a script and enters a debugging mode."
+    },
+    {
+      "keyword": "default",
+      "explanation": "A fallback block of code in switch statements that is executed if no other case matches."
+    },
+    {
+      "keyword": "delete",
+      "explanation": "Removes a property from an object or an element from an array."
+    },
+    {
+      "keyword": "do",
+      "explanation": "Creates a loop that executes its block of code at least once before evaluating the condition."
+    },
+    {
+      "keyword": "double",
+      "explanation": "A data type that represents 64-bit floating-point numbers."
+    },
+    {
+      "keyword": "else",
+      "explanation": "Specifies an alternative block of code to be executed if a condition is false."
+    },
+    {
+      "keyword": "enum",
+      "explanation": "Defines a custom type with a set of predefined values."
+    },
+    {
+      "keyword": "eval",
+      "explanation": "Evaluates a string as JavaScript code and executes it."
+    },
+    {
+      "keyword": "export",
+      "explanation": "Makes variables, functions, classes, or other constructs accessible from other modules or scripts."
+    },
+    {
+      "keyword": "extends",
+      "explanation": "Inherits properties and methods from another class."
+    },
+    {
+      "keyword": "FALSE",
+      "explanation": "A literal value that represents the logical value of false."
+    },
+    {
+      "keyword": "final",
+      "explanation": "Prevents a class or method from being overridden in subclasses."
+    },
+    {
+      "keyword": "finally",
+      "explanation": "Ensures that a block of code is executed regardless of whether a try block throws an exception or not."
+    },
+    {
+      "keyword": "float",
+      "explanation": "A data type that represents 32-bit floating-point numbers."
+    },
+    {
+      "keyword": "for",
+      "explanation": "Creates a loop that executes a block of code repeatedly until a condition is met."
+    },
+    {
+      "keyword": "function",
+      "explanation": "A reusable block of code that can be called with arguments."
+    },
+    {
+      "keyword": "goto",
+      "explanation": "Jumps to a specific label within a script."
+    },
+    {
+      "keyword": "if",
+      "explanation": "Executes a block of code if a specified condition is true."
+    },
+    {
+      "keyword": "implements",
+      "explanation": "Specifies that a class must implement the methods of a particular interface."
+    },
+    {
+      "keyword": "import",
+      "explanation": "Imports functions, objects, or values from a module or package."
+    },
+    {
+      "keyword": "in",
+      "explanation": "Checks if a property exists in an object."
+    },
+    {
+      "keyword": "instanceof",
+      "explanation": "Checks if an object is an instance of a particular class."
+    },
+    {
+      "keyword": "int",
+      "explanation": "A data type that represents 32-bit integers."
+    },
+    {
+      "keyword": "interface",
+      "explanation": "Defines a contract for classes to follow."
+    },
+    {
+      "keyword": "long",
+      "explanation": "A data type that represents 64-bit integers."
+    },
+    {
+      "keyword": "native",
+      "explanation": "Specifies that a method is implemented in native code using JNI (Java Native Interface)."
+    },
+    {
+      "keyword": "new",
+      "explanation": "Creates a new instance of a class or object."
+    },
+    {
+      "keyword": "null",
+      "explanation": "A special value that represents no value or no object."
+    },
+    {
+      "keyword": "package",
+      "explanation": "Groups related classes and interfaces into a single module."
+    },
+    {
+      "keyword": "private",
+      "explanation": "A modifier that makes a method or variable accessible only within its own class."
+    },
+    {
+      "keyword": "protected",
+      "explanation": "A modifier that makes a method or variable accessible within its own class and its subclasses."
+    },
+    {
+      "keyword": "public",
+      "explanation": "A modifier that makes a method or variable accessible from any class."
+    },
+    {
+      "keyword": "return",
+      "explanation": "Exits a method and optionally returns a value."
+    },
+    {
+      "keyword": "short",
+      "explanation": "A data type that represents 16-bit integers."
+    },
+    {
+      "keyword": "static",
+      "explanation": "A modifier that makes a method or variable belong to a class rather than an instance of the class."
+    },
+    {
+      "keyword": "super",
+      "explanation": "Refers to the parent class in an inheritance hierarchy."
+    },
+    {
+      "keyword": "switch",
+      "explanation": "Selects one of many code blocks to be executed based on the value of an expression."
+    },
+    {
+      "keyword": "synchronized",
+      "explanation": "A modifier that restricts a method or block of code to be accessed by only one thread at a time."
+    },
+    {
+      "keyword": "this",
+      "explanation": "Refers to the current instance of a class."
+    },
+    {
+      "keyword": "throw",
+      "explanation": "Throws an exception."
+    }
+  ]
+}

@@ -104,6 +104,30 @@
   </section>
 </template>
 
-<style scoped>
+<script>
+import technologiesData from '@/assets/technologies.json'
 
-</style>
+export default {
+  data() {
+    return {
+      technologies: technologiesData.technologies,
+      categoryOptions: []
+    }
+  },
+  mounted() {
+    this.categoryOptions = [...new Set(this.technologies.map((technology) => technology.category))]
+  },
+  computed: {
+    filteredTechnologies() {
+      const categories = {}
+      for (const technology of this.technologies) {
+        if (!categories[technology.category]) {
+          categories[technology.category] = []
+        }
+        categories[technology.category].push(technology)
+      }
+      return categories
+    }
+  }
+}
+</script>

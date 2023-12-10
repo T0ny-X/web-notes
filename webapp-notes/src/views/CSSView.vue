@@ -18,65 +18,9 @@
         <th>Property</th>
         <th>Description</th>
       </tr>
-      <tr>
-        <td>background-color</td>
-        <td>Specifies the background color of an element.</td>
-      </tr>
-      <tr>
-        <td>color</td>
-        <td>Defines the color of the text inside an element.</td>
-      </tr>
-      <tr>
-        <td>font-family</td>
-        <td>Specifies the font for the text inside an element.</td>
-      </tr>
-      <tr>
-        <td>font-size</td>
-        <td>Defines the size of the font.</td>
-      </tr>
-      <tr>
-        <td>margin</td>
-        <td>Sets the margin space around elements.</td>
-      </tr>
-      <tr>
-        <td>padding</td>
-        <td>Sets the padding space inside an element.</td>
-      </tr>
-      <tr>
-        <td>border</td>
-        <td>Specifies the border around elements.</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td>Defines the width of an element.</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td>Defines the height of an element.</td>
-      </tr>
-      <tr>
-        <td>text-align</td>
-        <td>Specifies the horizontal alignment of text in an element.</td>
-      </tr>
-      <tr>
-        <td>position</td>
-        <td>Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</td>
-      </tr>
-      <tr>
-        <td>display</td>
-        <td>Specifies if/how an element is displayed.</td>
-      </tr>
-      <tr>
-        <td>opacity</td>
-        <td>Sets the opacity level for an element.</td>
-      </tr>
-      <tr>
-        <td>z-index</td>
-        <td>Sets the stack order of an element.</td>
-      </tr>
-      <tr>
-        <td>overflow</td>
-        <td>Specifies what should happen if content overflows an element's box.</td>
+      <tr v-for="unit in css_attributes" :key="unit.unit">
+        <td>{{ unit.property }}</td>
+        <td>{{ unit.description }}</td>
       </tr>
     </table>
   </section>
@@ -101,16 +45,29 @@
   <section>
     <h1>HTML Units</h1>
     <p>HTML units are used in web development to define sizes and distances. Here are some common units:</p>
-    <ul>
-      <li><strong>px</strong> - Pixels: A pixel is a dot on the screen, and it is the smallest visible unit represented on the screen. Example: <code>&lt;div style="width: 100px;"&gt;</code></li>
-      <li><strong>vh</strong> - Viewport Height: This unit is based on the height of the viewport. 1vh is equal to 1% of the viewport's height. Example: <code>&lt;div style="height: 50vh;"&gt;</code></li>
-      <li><strong>vw</strong> - Viewport Width: This unit is based on the width of the viewport. 1vw is equal to 1% of the viewport's width. Example: <code>&lt;div style="width: 50vw;"&gt;</code></li>
-      <li><strong>em</strong> - Relative to the font-size of the element (2em means 2 times the size of the current font). Example: <code>&lt;div style="font-size: 2em;"&gt;</code></li>
-      <li><strong>rem</strong> - Relative to font-size of the root element. Example: <code>&lt;div style="font-size: 2rem;"&gt;</code></li>
-      <li><strong>%</strong> - Relative to the parent element. Example: <code>&lt;div style="width: 50%;"&gt;</code></li>
-      <li><strong>pt</strong> - Points. 1pt is equal to 1/72 of an inch. Example: <code>&lt;div style="font-size: 12pt;"&gt;</code></li>
-      <li><strong>cm</strong>, <strong>mm</strong>, <strong>in</strong> - Centimeters, millimeters, inches. Used for print media. Example: <code>&lt;div style="width: 10cm;"&gt;</code></li>
-    </ul>
+    <table>
+      <tr>
+        <th>Unit</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr v-for="unit in css_units" :key="unit.unit">
+        <td>{{ unit.unit }}</td>
+        <td>{{ unit.description }}</td>
+        <td><code>{{ unit.example }}</code></td>
+      </tr>
+    </table>
   </section>
 </template>
 
+<script>
+import CssData from '@/assets/css-info.json'
+export default {
+  data() {
+    return {
+      css_attributes: CssData.attributes,
+      css_units : CssData.units,
+    };
+  },
+};
+</script>

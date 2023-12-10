@@ -202,3 +202,18 @@ section h1 {
 }
 
 /* Mobile adaptation */
+/* Mobile adaptation */
+@media screen and (max-width: 700px) {
+  #nav_title {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}

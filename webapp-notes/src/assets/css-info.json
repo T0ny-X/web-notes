@@ -1,0 +1,106 @@
+{
+  "attributes": [
+    {
+      "property": "background-color",
+      "description": "Specifies the background color of an element."
+    },
+    {
+      "property": "color",
+      "description": "Defines the color of the text inside an element."
+    },
+    {
+      "property": "font-family",
+      "description": "Specifies the font for the text inside an element."
+    },
+    {
+      "property": "font-size",
+      "description": "Defines the size of the font."
+    },
+    {
+      "property": "margin",
+      "description": "Sets the margin space around elements."
+    },
+    {
+      "property": "padding",
+      "description": "Sets the padding space inside an element."
+    },
+    {
+      "property": "border",
+      "description": "Specifies the border around elements."
+    },
+    {
+      "property": "width",
+      "description": "Defines the width of an element."
+    },
+    {
+      "property": "height",
+      "description": "Defines the height of an element."
+    },
+    {
+      "property": "text-align",
+      "description": "Specifies the horizontal alignment of text in an element."
+    },
+    {
+      "property": "position",
+      "description": "Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky)."
+    },
+    {
+      "property": "display",
+      "description": "Specifies if/how an element is displayed."
+    },
+    {
+      "property": "opacity",
+      "description": "Sets the opacity level for an element."
+    },
+    {
+      "property": "z-index",
+      "description": "Sets the stack order of an element."
+    },
+    {
+      "property": "overflow",
+      "description": "Specifies what should happen if content overflows an element's box."
+    }
+  ],
+  "units": [
+    {
+      "unit": "px",
+      "description": "Pixels: A pixel is a dot on the screen, and it is the smallest visible unit represented on the screen.",
+      "example": "<div style=\"width: 100px;\">"
+    },
+    {
+      "unit": "vh",
+      "description": "Viewport Height: This unit is based on the height of the viewport. 1vh is equal to 1% of the viewport's height.",
+      "example": "<div style=\"height: 50vh;\">"
+    },
+    {
+      "unit": "vw",
+      "description": "Viewport Width: This unit is based on the width of the viewport. 1vw is equal to 1% of the viewport's width.",
+      "example": "<div style=\"width: 50vw;\">"
+    },
+    {
+      "unit": "em",
+      "description": "Relative to the font-size of the element (2em means 2 times the size of the current font).",
+      "example": "<div style=\"font-size: 2em;\">"
+    },
+    {
+      "unit": "rem",
+      "description": "Relative to font-size of the root element.",
+      "example": "<div style=\"font-size: 2rem;\">"
+    },
+    {
+      "unit": "%",
+      "description": "Relative to the parent element.",
+      "example": "<div style=\"width: 50%;\">"
+    },
+    {
+      "unit": "pt",
+      "description": "Points. 1pt is equal to 1/72 of an inch.",
+      "example": "<div style=\"font-size: 12pt;\">"
+    },
+    {
+      "unit": "cm, mm, in",
+      "description": "Centimeters, millimeters, inches. Used for print media.",
+      "example": "<div style=\"width: 10cm;\">"
+    }
+  ]
+}
