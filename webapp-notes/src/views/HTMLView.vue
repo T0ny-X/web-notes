@@ -98,7 +98,7 @@
     <h1>Audio Example</h1>
     <p>This is a simple example of embedding audio in an HTML5 webpage, refer to the above code for images and video.</p>
     <audio controls>
-      <source src="sound/canon_in_d.mp3" type="audio/mpeg">
+      <source src="../assets/canon_in_d.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </section>
