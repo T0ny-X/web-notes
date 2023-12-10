@@ -1,0 +1,203 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+/* Header and footer styles */
+header, footer{
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1vh;
+}
+
+footer{
+  justify-content: center;
+}
+
+#logo{
+  height: 2vh;
+  width: 2vh;
+  display: inline-grid;
+  align-self: center;
+}
+
+/* Navigation title styles */
+#nav_title{
+  font-family: "Times New Roman", serif;
+  text-align: left;
+  display: inline-flex;
+  transform: scale(0.7);
+  font-size: 2rem;
+}
+
+/* Nav list styles */
+.nav ul {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start/left */
+  width: 100%; /* Take full width of the nav bar */
+  list-style-type: none;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.nav li {
+  padding: 1vh;
+}
+
+.nav li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+/* Style for a common submit form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align labels and input fields to the left */
+  margin: 20px;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 1em;
+}
+
+form input {
+  width: 25px;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+form input[type="text"] {
+  width: 200px;
+}
+
+form input[type="submit"] {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Radio buttons and checkboxes styling */
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: row; /* Align options and checkboxes on the same line */
+  margin-left: 20px; /* Indent the radio buttons and checkboxes */
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 1.5em;
+}
+
+/* Style for the error message */
+.error {
+  color: red;
+  margin-top: 1em;
+  font-size: 0.8rem;
+}
+
+.error-input {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--accent-color);
+}
+
+/* Content in main styles */
+main{
+  margin: auto;
+  padding: 2vw;
+}
+
+section {
+  display: block;
+}
+
+main p {
+  line-height: 1.5em;
+}
+
+main li {
+  margin-bottom: 1.5em;
+}
+
+main table {
+  border-collapse: collapse;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
+}
+
+main th, td {
+  border: 1px solid var(--secondary-color);
+  padding: 8px;
+}
+
+main th {
+  background-color: var(--background-color);
+}
+
+main tr:hover {
+  background-color: var(--primary-color);
+}
+
+main iframe{
+  width: 640px;
+  height: 360px;
+}
+
+main audio {
+  display: flex;
+  justify-content: space-between;
+}
+
+main img {
+  width: 640px;
+  height: auto;
+}
+
+button{
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+section h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Mobile adaptation */
+

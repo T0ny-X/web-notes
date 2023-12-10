@@ -1,0 +1,94 @@
+{
+  "technologies": [
+    {
+      "name": "Django",
+      "website": "https://www.djangoproject.com/",
+      "category": "Backend framework"
+    },
+    {
+      "name": "Flask",
+      "website": "https://palletsprojects.com/p/flask/",
+      "category": "Backend framework"
+    },
+    {
+      "name": "Vue",
+      "website": "https://vuejs.org/",
+      "category": "Frontend framework"
+    },
+    {
+      "name": "HTML",
+      "website": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "category": "Page language"
+    },
+    {
+      "name": "CSS",
+      "website": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "category": "Page style"
+    },
+    {
+      "name": "JS",
+      "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "category": "Page behavior"
+    },
+    {
+      "name": "ReCaptcha",
+      "website": "https://www.google.com/recaptcha/intro/v3.html",
+      "category": "In page service"
+    },
+    {
+      "name": "Analytics",
+      "website": "https://analytics.google.com/",
+      "category": "In page service"
+    },
+    {
+      "name": "Firestore",
+      "website": "https://firebase.google.com/docs/firestore",
+      "category": "Backend database"
+    },
+    {
+      "name": "PlanetScale",
+      "website": "https://planetscale.com/",
+      "category": "Backend database"
+    },
+    {
+      "name": "Vercel PostgreSQL",
+      "website": "https://vercel.com/guides/databases",
+      "category": "Backend database"
+    },
+    {
+      "name": "Cloudflare",
+      "website": "https://www.cloudflare.com/",
+      "category": "Hosting"
+    },
+    {
+      "name": "SSL",
+      "website": "https://www.cloudflare.com/learning/ssl/",
+      "category": "Hosting"
+    },
+    {
+      "name": "Apache2",
+      "website": "https://httpd.apache.org/",
+      "category": "Hosting"
+    },
+    {
+      "name": "Google Sites",
+      "website": "https://sites.google.com/",
+      "category": "Hosting"
+    },
+    {
+      "name": "GitHub Actions",
+      "website": "https://github.com/features/actions",
+      "category": "DevOps"
+    },
+    {
+      "name": "Vercel CD",
+      "website": "https://vercel.com/docs/concepts/continuous-deployment",
+      "category": "DevOps"
+    },
+    {
+      "name": "Qodana CI",
+      "website": "https://www.jetbrains.com/qodana/",
+      "category": "DevOps"
+    }
+  ]
+}
