@@ -8,7 +8,8 @@
 }
 
 /* Header and footer styles */
-header, footer{
+header,
+footer {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -17,7 +18,7 @@ header, footer{
   padding: 10px;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
   left: 0;
@@ -25,11 +26,11 @@ header{
   padding: 1vh;
 }
 
-footer{
+footer {
   justify-content: center;
 }
 
-#logo{
+#logo {
   height: 2vh;
   width: 2vh;
   display: inline-grid;
@@ -37,8 +38,8 @@ footer{
 }
 
 /* Navigation title styles */
-#nav_title{
-  font-family: "Times New Roman", serif;
+#nav_title {
+  font-family: 'Times New Roman', serif;
   text-align: left;
   display: inline-flex;
   transform: scale(0.7);
@@ -88,11 +89,11 @@ form input {
   border-radius: 5px;
 }
 
-form input[type="text"] {
+form input[type='text'] {
   width: 200px;
 }
 
-form input[type="submit"] {
+form input[type='submit'] {
   width: 100px;
   padding: 10px 20px;
   background-color: var(--accent-color);
@@ -112,8 +113,8 @@ form input[type="submit"] {
   margin-left: 20px; /* Indent the radio buttons and checkboxes */
 }
 
-form input[type="radio"],
-form input[type="checkbox"] {
+form input[type='radio'],
+form input[type='checkbox'] {
   margin-right: 5px;
   margin-bottom: 1.5em;
 }
@@ -131,7 +132,7 @@ form input[type="checkbox"] {
 }
 
 /* Content in main styles */
-main{
+main {
   margin: auto;
   padding: 2vw;
 }
@@ -155,7 +156,8 @@ main table {
   width: 100%;
 }
 
-main th, td {
+main th,
+td {
   border: 1px solid var(--secondary-color);
   padding: 8px;
 }
@@ -168,7 +170,7 @@ main tr:hover {
   background-color: var(--primary-color);
 }
 
-main iframe{
+main iframe {
   width: 640px;
   height: 360px;
 }
@@ -183,7 +185,7 @@ main img {
   height: auto;
 }
 
-button{
+button {
   background-color: var(--accent-color);
   color: white;
   padding: 10px 20px;
@@ -200,4 +202,3 @@ section h1 {
 }
 
 /* Mobile adaptation */
-
