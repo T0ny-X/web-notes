@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/js',
       name: 'JS',
-      component: () => import('../views/JSView.vue')
+      component: () => import('../views/JsView.vue')
     },
     {
       path: '/html',
