@@ -10,11 +10,20 @@ import { RouterLink, RouterView } from 'vue-router'
         <li><RouterLink to="/css">CSS</RouterLink></li>
         <li><RouterLink to="/html">HTML</RouterLink></li>
         <li><RouterLink to="/js">JS</RouterLink></li>
-        <li><RouterLink to="/msg">Message</RouterLink></li>
+        <li><RouterLink to="/msg">API</RouterLink></li>
+        <li><RouterLink to="/data">Database</RouterLink></li>
       </ul>
     </nav>
   </header>
   <RouterView />
+  <footer>© 2023. Tony X. Open Source. MIT Licence.</footer>
 </template>
 
-<script></script>
+<script>
+import AddMessage from './views/DataView.vue'
+export default {
+  components: {
+    AddMessage
+  }
+}
+</script>

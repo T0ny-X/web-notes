@@ -1,4 +1,5 @@
 <template>
+
   <main>
     <section>
       <h1>About this Site</h1>
@@ -12,6 +13,7 @@
         </p>
       </article>
     </section>
+
     <section>
       <h1>Personal Thoughts</h1>
       <article>
@@ -26,6 +28,7 @@
         </p>
       </article>
     </section>
+
     <section>
       <h1>Technology Mentioned</h1>
       <article>
@@ -41,8 +44,9 @@
         </div>
       </article>
     </section>
+
   </main>
-  <footer>© 2023. Tony X. Open Source. MIT Licence.</footer>
+
 </template>
 
 <script>

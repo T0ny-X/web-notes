@@ -26,9 +26,14 @@ const router = createRouter({
     },
     {
       path: '/msg',
-      name: 'Message',
+      name: 'API',
       component: () => import('../views/MessageView.vue')
     },
+    {
+      path: '/data',
+      name: 'Database',
+      component: () => import('../views/DataView.vue')
+    }
   ]
 })
 

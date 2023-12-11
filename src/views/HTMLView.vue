@@ -1,24 +1,24 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <section>
-    <h1>
-      Quick Reminder
-    </h1>
-    <iframe src="https://www.youtube.com/embed/ok-plXXHlWw" title="HTML in 100 Seconds" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Quick Reminder</h1>
+    <iframe
+      src="https://www.youtube.com/embed/ok-plXXHlWw"
+      title="HTML in 100 Seconds"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </section>
   <section>
-    <h1>
-      Basic Structure
-    </h1>
-    <img src="https://cms-media.bartleby.com/wp-content/uploads/sites/2/2021/11/15093514/StructureofHTMLDocument.jpg" alt="Structure of HTML document">
+    <h1>Basic Structure</h1>
+    <img
+      src="https://cms-media.bartleby.com/wp-content/uploads/sites/2/2021/11/15093514/StructureofHTMLDocument.jpg"
+      alt="Structure of HTML document"
+    />
   </section>
   <section>
-    <h1>
-      List
-    </h1>
+    <h1>List</h1>
     <table>
       <tr>
         <th>Tag</th>
@@ -96,38 +96,14 @@
   </section>
   <section>
     <h1>Audio Example</h1>
-    <p>This is a simple example of embedding audio in an HTML5 webpage, refer to the above code for images and video.</p>
+    <p>
+      This is a simple example of embedding audio in an HTML5 webpage, refer to the above code for
+      images and video.
+    </p>
     <audio controls>
-      <source src="../assets/canon_in_d.mp3" type="audio/mpeg">
+      <source src="../assets/canon_in_d.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
   </section>
 </template>
 
-<script>
-import technologiesData from '@/assets/technologies.json'
-
-export default {
-  data() {
-    return {
-      technologies: technologiesData.technologies,
-      categoryOptions: []
-    }
-  },
-  mounted() {
-    this.categoryOptions = [...new Set(this.technologies.map((technology) => technology.category))]
-  },
-  computed: {
-    filteredTechnologies() {
-      const categories = {}
-      for (const technology of this.technologies) {
-        if (!categories[technology.category]) {
-          categories[technology.category] = []
-        }
-        categories[technology.category].push(technology)
-      }
-      return categories
-    }
-  }
-}
-</script>
