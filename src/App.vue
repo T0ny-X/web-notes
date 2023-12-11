@@ -20,10 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <script>
-import AddMessage from './views/DataView.vue'
 export default {
-  components: {
-    AddMessage
-  }
+  components: {}
 }
 </script>

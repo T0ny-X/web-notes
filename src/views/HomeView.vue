@@ -1,5 +1,4 @@
 <template>
-
   <main>
     <section>
       <h1>About this Site</h1>
@@ -44,9 +43,7 @@
         </div>
       </article>
     </section>
-
   </main>
-
 </template>
 
 <script>

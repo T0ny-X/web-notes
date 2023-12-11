@@ -27,18 +27,18 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 
 export default {
   data() {
     return {
       messages: [],
-      newMessage: "",
-    };
+      newMessage: ''
+    }
   },
   mounted() {
     // Load messages when the component is mounted
-    this.loadMessages();
+    this.loadMessages()
   },
   methods: {
     async loadMessages() {
@@ -46,23 +46,23 @@ export default {
       const PROJECT_ID = process.env.VUE_APP_FIREBASE_PROJECT_ID
       try {
         const response = await axios.get(
-            `https://firestore.googleapis.com/v1/projects/${ PROJECT_ID }/databases/(default)/documents/messages?key=${API_KEY}`
-        );
+          `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/messages?key=${API_KEY}`
+        )
 
         this.messages = response.data.documents.map((doc) => {
-          let text = '';
+          let text = ''
           if (doc.fields.text) {
-            text = doc.fields.text.stringValue;
+            text = doc.fields.text.stringValue
           } else if (doc.fields.message) {
-            text = doc.fields.message.stringValue;
+            text = doc.fields.message.stringValue
           }
           return {
-            id: doc.name.split("/").pop(),
-            text: text,
-          };
-        });
+            id: doc.name.split('/').pop(),
+            text: text
+          }
+        })
       } catch (error) {
-        console.error("Error loading messages:", error);
+        console.error('Error loading messages:', error)
       }
     },
     async addMessage() {
@@ -70,27 +70,26 @@ export default {
       const PROJECT_ID = process.env.VUE_APP_FIREBASE_PROJECT_ID
       try {
         const response = await axios.post(
-            `https://firestore.googleapis.com/v1/projects/${ PROJECT_ID }/databases/(default)/documents/messages?key=${API_KEY}`,
-            {
-              fields: {
-                text: { stringValue: this.newMessage },
-              },
+          `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/messages?key=${API_KEY}`,
+          {
+            fields: {
+              text: { stringValue: this.newMessage }
             }
-        );
+          }
+        )
 
-        console.log("Message added:", response.data);
-        this.newMessage = ""; // Clear the input field
-        await this.loadMessages(); // Reload messages after adding a new one
+        console.log('Message added:', response.data)
+        this.newMessage = '' // Clear the input field
+        await this.loadMessages() // Reload messages after adding a new one
       } catch (error) {
-        console.error("Error adding message:", error);
+        console.error('Error adding message:', error)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped>
-
 .message-list {
   margin-top: 20px;
 }
@@ -101,5 +100,4 @@ export default {
   margin-bottom: 5px;
   border-radius: 5px;
 }
-
 </style>
