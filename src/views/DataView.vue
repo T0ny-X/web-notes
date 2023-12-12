@@ -24,6 +24,10 @@
       <button type="submit">Add Message</button>
     </form>
   </div>
+  <noscript>
+    <p>Send and view messages are available with JavaScript enabled. Alternatively, check out
+    <a>https://firestore.googleapis.com/v1/projects/web-notes-77506/databases/(default)/documents/messages</a> for messages.</p>
+  </noscript>
 </template>
 
 <script>

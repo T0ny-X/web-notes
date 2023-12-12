@@ -27,6 +27,75 @@
         <td>{{ unit.description }}</td>
       </tr>
     </table>
+    <noscript>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>Specifies the background color of an element.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Defines the color of the text inside an element.</td>
+        </tr>
+        <tr>
+          <td>font-family</td>
+          <td>Specifies the font for the text inside an element.</td>
+        </tr>
+        <tr>
+          <td>font-size</td>
+          <td>Defines the size of the font.</td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>Sets the margin space around elements.</td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>Sets the padding space inside an element.</td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>Specifies the border around elements.</td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>Defines the width of an element.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>Defines the height of an element.</td>
+        </tr>
+        <tr>
+          <td>text-align</td>
+          <td>Specifies the horizontal alignment of text in an element.</td>
+        </tr>
+        <tr>
+          <td>position</td>
+          <td>Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</td>
+        </tr>
+        <tr>
+          <td>display</td>
+          <td>Specifies if/how an element is displayed.</td>
+        </tr>
+        <tr>
+          <td>opacity</td>
+          <td>Sets the opacity level for an element.</td>
+        </tr>
+        <tr>
+          <td>z-index</td>
+          <td>Sets the stack order of an element.</td>
+        </tr>
+        <tr>
+          <td>overflow</td>
+          <td>Specifies what should happen if content overflows an element's box.</td>
+        </tr>
+      </table>
+      <p>More detailed information is available with JavaScript enabled.</p>
+    </noscript>
   </section>
   <section>
     <h1>Specificity Hierarchy</h1>
@@ -65,10 +134,9 @@
     </p>
   </section>
   <section>
-    <h1>HTML Units</h1>
+    <h1>CSS Units</h1>
     <p>
-      HTML units are used in web development to define sizes and distances. Here are some common
-      units:
+      CSS units are used in web development to define sizes and distances. Here are some common units:
     </p>
     <table>
       <tr>

@@ -41,6 +41,29 @@
             </ul>
           </div>
         </div>
+        <noscript>
+          <div>
+            <h3>Technology Mentioned (Not updated, enable JavaScript to see the latest)</h3>
+            <ul>
+              <li><a href="https://www.djangoproject.com/" target="_blank">Django</a> (Backend framework)</li>
+              <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a> (Backend framework)</li>
+              <li><a href="https://vuejs.org/" target="_blank">Vue</a> (Frontend framework)</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a> (Page language)</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a> (Page style)</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JS</a> (Page behavior)</li>
+              <li><a href="https://www.google.com/recaptcha/intro/v3.html" target="_blank">ReCaptcha</a> (In page service)</li>
+              <li><a href="https://analytics.google.com/" target="_blank">Analytics</a> (In page service)</li>
+              <li><a href="https://firebase.google.com/docs/firestore" target="_blank">Firestore</a> (Backend database)</li>
+              <li><a href="https://planetscale.com/" target="_blank">PlanetScale</a> (Backend database)</li>
+              <li><a href="https://vercel.com/guides/databases" target="_blank">Vercel PostgreSQL</a> (Backend database)</li>
+              <li><a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a> (Hosting)</li>
+              <li><a href="https://www.cloudflare.com/learning/ssl/" target="_blank">SSL</a> (Hosting)</li>
+              <li><a href="https://httpd.apache.org/" target="_blank">Apache2</a> (Hosting)</li>
+              <li><a href="https://sites.google.com/" target="_blank">Google Sites</a> (Hosting)</li>
+              <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> (DevOps)</li>
+            </ul>
+          </div>
+        </noscript>
       </article>
     </section>
   </main>

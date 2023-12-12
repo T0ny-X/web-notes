@@ -2,6 +2,9 @@
   <div>
     <h1>Magical Button</h1>
     <p v-if="advice">{{ advice }}</p>
+    <noscript>
+      <p>Dynamic advice is available with JavaScript enabled. Alternatively, check out <a href="https://api.adviceslip.com">api.adviceslip.com</a> for advice.</p>
+    </noscript>
     <br />
     <button @click="getAdvice">Get Advice</button>
   </div>
@@ -54,13 +57,24 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      advice: null
+      advice: 'Static piece of advice for users without JavaScript.',
+      javascriptEnabled: true
     }
   },
   methods: {
     async getAdvice() {
-      const response = await axios.get('https://api.adviceslip.com/advice')
-      this.advice = response.data.slip.advice
+      try {
+        const response = await axios.get('https://api.adviceslip.com/advice')
+        this.advice = response.data.slip.advice
+      } catch (error) {
+        console.error('API call failed:', error)
+      }
+    }
+  },
+  created() {
+    this.javascriptEnabled = typeof window !== 'undefined' && typeof window.axios !== 'undefined';
+    if (this.javascriptEnabled) {
+      this.getAdvice(); // Optionally load initial advice dynamically
     }
   }
 }
