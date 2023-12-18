@@ -1,6 +1,5 @@
 # Web App Notes
-Project: Tony's Web App Journey
-Welcome to Tony's Web App Journey! This is a repository for a web application showcasing my journey through the world of web development.
+This is a journal for the world of web development.
 
 ## Key Pages:
 
